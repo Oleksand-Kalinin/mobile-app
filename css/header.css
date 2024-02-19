@@ -1,0 +1,45 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.header-container {
+    background-color: black;
+}
+
+.logo {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    color: #fff;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-ul {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: none;
+}
