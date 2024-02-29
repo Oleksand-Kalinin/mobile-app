@@ -1,3 +1,11 @@
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color:#000;
+}
+
+
 h1,
 h2,
 h3,
@@ -26,26 +34,33 @@ button {
     display: block;
 }
 
-.section-hero {
-   padding-top: 146px;
-   padding-bottom: 146px;
+img {
+    display: block;
+    max-width: 100%;
 }
 
+.section-hero {
+   padding-top: 343px;
+   padding-bottom: 146px;
+   background-color: #06071b;
+   color: #fff;
+
+    background-image: url(../images/hero-img/phone.png),
+            url(../images/hero-img/decor.png);
+    background-repeat: no-repeat;
+    background-position: top 210px right 0px, bottom 49px left 339px;
+}
 .container {
-    width: 1280px;
+    max-width: 1280px;
     padding-left: 16px;
     padding-right: 16px;
     margin: 0 auto;
-
-}
-
-.hero-container {
-    display: flex;
 }
 
 .hero-title {
     font-size: 40px;
     margin-bottom: 12px;
+    font-weight: 700;
 }
 
 .hero-text {
@@ -58,21 +73,51 @@ button {
     margin-bottom: 62px;
 }
 
+.hero-item {
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
 .hero-item:not(:last-child) {
     margin-bottom: 14px;
 }
 
-.hero-button {
-    min-width: 200px;
+.hero-item-svg {
+    fill: #fff;
+    margin-right: 10px;
+}
+
+/*  Button */
+
+.block-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 42px;
     border-radius: 5px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
 }
 
-.hero-button:hover,
-.hero-button:focus {
-    background-color: blue;
+.button {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+    
+
 }
 
-
-
+.button:hover,
+.button:focus {
+    background: #06071b;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+}
