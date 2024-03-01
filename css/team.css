@@ -80,6 +80,7 @@ img {
 }
 
 .thumb {
+    width: 264px;
     height: 260px;
 }
 
@@ -107,7 +108,6 @@ img {
 
 .team-item-block {
     padding-top: 20px;
-    padding-bottom: 12px;
     text-align: center;
     color: #fff;
 }
